@@ -12,6 +12,10 @@ const HeaderFilter = () => {
             <ExpandMoreInfo />
           </Box>
           <Box className="box " component="div">
+            <span>Apartment type</span>
+            <ExpandMoreInfo />
+          </Box>
+          <Box className="box " component="div">
             <span>7 rooms</span>
             <ExpandMoreInfo />
           </Box>
