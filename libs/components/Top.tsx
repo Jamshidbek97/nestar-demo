@@ -21,7 +21,7 @@ const Top = () => {
             <Link href="/property">
               <div>Property</div>
             </Link>
-            <Link href="/agents">
+            <Link href="/agent">
               <div>Agents</div>
             </Link>
             <Link href="/community?articleCategory=FREE">
