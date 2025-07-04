@@ -1,3 +1,4 @@
+import PopularProperties from "@/libs/components/homepage/PopularProperties";
 import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import withLayoutMain from "@/libs/components/layout/LayoutHome";
 import { Stack } from "@mui/material";
@@ -10,10 +11,7 @@ const Home: NextPage = () => {
   return (
     <Stack className="home-page">
       <TrendProperties />
-
-      <Stack>
-        <Stack className="container">Popular Properties</Stack>
-      </Stack>
+      <PopularProperties />
       <Stack>
         <Stack className="container">Advertisements</Stack>
       </Stack>
