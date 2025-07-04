@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 const TopPropertyCard = () => {
   return (
-    <Stack className="trend-card-box">
+    <Stack className="top-card-box">
       <Box
         className="card-img"
         style={{ backgroundImage: `url("/img/banner/types/house.webp")` }}

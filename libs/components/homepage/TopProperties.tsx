@@ -3,18 +3,18 @@ import { useState } from "react";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TrendPropertyCard from "./TrendPropertyCard";
+import TopPropertyCard from "./TopPropertyCard";
 
-const TrendProperties = () => {
+const TopProperties = () => {
   const [trendProperties, setTrendProperties] = useState([1, 2, 3, 4, 5, 6, 7]);
 
   return (
-    <Stack className="trend-properties">
+    <Stack className="top-properties">
       <Stack className="container">
         <Stack className="info-box">
           <Box className="left">
-            <span>Trend Properties</span>
-            <p>Check out our most liked properties</p>
+            <span>Top Properties</span>
+            <p>Check out Top properties</p>
           </Box>
           <Box className="right">
             <div className="pagination-box">
@@ -43,7 +43,7 @@ const TrendProperties = () => {
               {trendProperties.map((property, index) => {
                 return (
                   <SwiperSlide key={index} className="trend-property-slide">
-                    <TrendPropertyCard />
+                    <TopPropertyCard />
                   </SwiperSlide>
                 );
               })}
@@ -55,4 +55,4 @@ const TrendProperties = () => {
   );
 };
 
-export default TrendProperties;
+export default TopProperties;
