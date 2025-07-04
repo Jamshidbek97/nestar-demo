@@ -26,7 +26,7 @@ const HeaderFilter = () => {
             <span>Advanced</span>
           </Box>
           <Box className="search-btn">
-            <img src="/img/icons/search-white.svg" alt="" />
+            <img src="/img/icons/search_white.svg" alt="" />
           </Box>
         </Stack>
       </Stack>
