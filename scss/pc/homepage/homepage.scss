@@ -789,5 +789,160 @@
         }
       }
     }
+    .top-agents {
+      padding: 132px 0px 94px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background: #f6f6f6;
+      .container {
+        flex-direction: column;
+        align-items: center;
+        .info-box {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .left {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            span {
+              font-size: 42px;
+              font-weight: 700;
+              line-height: 50px;
+              color: #1a1a1a;
+              text-transform: capitalize;
+              background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 60px;
+                height: 4px;
+                background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+                border-radius: 2px;
+              }
+              &.white {
+                color: #ffffff;
+                -webkit-text-fill-color: #ffffff;
+              }
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26px;
+              color: #666666;
+              margin-top: 8px;
+              &.white {
+                color: #ffffff;
+              }
+            }
+          }
+          .right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+            .more-box {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              cursor: pointer;
+              padding: 12px 24px;
+              border-radius: 30px;
+              background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+              transition: all 0.3s ease;
+              text-decoration: none;
+              box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+
+              &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+              }
+
+              span {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #ffffff;
+                text-transform: capitalize;
+              }
+              img {
+                width: 18px;
+                height: 18px;
+                margin-left: 8px;
+                filter: brightness(0) invert(1);
+              }
+            }
+          }
+        }
+        .card-box {
+          margin-top: 34px;
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .popular-property-swiper {
+            display: flex;
+            flex-direction: row;
+            .popular-property-slide {
+              width: auto;
+              height: auto;
+              display: flex;
+              margin: 10px 0 10px 10px;
+            }
+          }
+          .top-card-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, opacity 0.3s;
+            &:hover {
+              opacity: 1;
+              transform: scale(1.05);
+            }
+            .card-img {
+              position: relative;
+              width: 100%;
+              border-radius: 50%;
+              background-size: cover;
+
+              cursor: pointer;
+            }
+            .info {
+              margin-top: 30px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+        .pagination-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #000000;
+          }
+          .swiper-popular-next {
+            margin-left: 20px;
+            cursor: pointer;
+          }
+          .swiper-popular-prev {
+            margin-right: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }

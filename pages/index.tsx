@@ -1,5 +1,6 @@
 import Advertisement from "@/libs/components/homepage/Advertisement";
 import PopularProperties from "@/libs/components/homepage/PopularProperties";
+import TopAgents from "@/libs/components/homepage/TopAgents";
 import TopProperties from "@/libs/components/homepage/TopProperties";
 import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import withLayoutMain from "@/libs/components/layout/LayoutHome";
@@ -16,9 +17,7 @@ const Home: NextPage = () => {
       <PopularProperties />
       <Advertisement />
       <TopProperties />
-      <Stack>
-        <Stack className="container">Top Agents</Stack>
-      </Stack>
+      <TopAgents />
     </Stack>
   );
 };
