@@ -1,3 +1,4 @@
+import Advertisement from "@/libs/components/homepage/Advertisement";
 import PopularProperties from "@/libs/components/homepage/PopularProperties";
 import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import withLayoutMain from "@/libs/components/layout/LayoutHome";
@@ -12,9 +13,7 @@ const Home: NextPage = () => {
     <Stack className="home-page">
       <TrendProperties />
       <PopularProperties />
-      <Stack>
-        <Stack className="container">Advertisements</Stack>
-      </Stack>
+      <Advertisement />
       <Stack>
         <Stack className="container">Top Properties</Stack>
       </Stack>
